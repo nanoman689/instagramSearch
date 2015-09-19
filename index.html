@@ -20,10 +20,10 @@
     </form>
     <div class="results" ng-if="results">
       <h2>Found {{results.length}} results for {{keyword}}<h2>
-        <div ng-repeat="result in results">
-          <iframe ng-src="{{results}}" frameborder="0" width="480" height="390"></iframe>
+        <div class="photos" ng-repeat="result in results">
+          <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
         </div>
-    </div>      
+    </div>
   <div>
 
 

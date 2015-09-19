@@ -27,6 +27,23 @@ input {
   padding-bottom: 10px;
 }
 
+.results {
+  opacity: 1;
+  margin: auto;
+}
+
+/* start animation */
+.photos.ng-scope.ng-enter,
+.photos.ng-scope.ng-move {
+  transition: all linear 10s;
+}
+
+/* end animation */
+.photos.ng-scope.ng-leave {
+  margin-left: -200px;
+  opacity: 0.25;
+}
+
 .img {
   padding: 10px;
 }
