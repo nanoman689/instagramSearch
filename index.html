@@ -18,7 +18,7 @@
     <form ng-submit="searchInstaGram(keyword)">
       <input type="text" class="search" value="" ng-model="keyword" placeholder="Enter a tag to search"> <input type="submit" name="btn" class="btn-style" id="submit" value="submit">
     </form>
-    <div class="results" ng-if="results">
+    <div class="results" ng-show="results">
       <h2>Found {{results.length}} results for {{keyword}}<h2>
         <div class="photos" ng-repeat="result in results">
           <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>

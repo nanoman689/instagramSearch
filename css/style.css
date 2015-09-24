@@ -29,19 +29,19 @@ input {
 
 .results {
   opacity: 1;
-  margin: auto;
+  margin-left: 0;
 }
 
 /* start animation */
-.photos.ng-scope.ng-enter,
-.photos.ng-scope.ng-move {
-  transition: all linear 10s;
+.results.ng-hide-add,
+.results.ng-hide-remove {
+  transition: all linear 2s;
 }
 
-/* end animation */
-.photos.ng-scope.ng-leave {
-  margin-left: -200px;
-  opacity: 0.25;
+/* start animation */
+.results.ng-hide {
+  margin-left: -400px;
+  opacity: 0;
 }
 
 .img {
