@@ -1,0 +1,14 @@
+{
+  "name": "tester",
+  "version": "1.0.0",
+  "description": "test app test",
+  "main": "test.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Jason Thomas",
+  "license": "ISC"
+}

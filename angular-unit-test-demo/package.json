@@ -1,0 +1,15 @@
+{
+  "name": "angular-unit-test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "dependencies": {},
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

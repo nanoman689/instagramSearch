@@ -1,0 +1,11 @@
+.app {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding-top: 50px;
+  font: normal 1em/1.7 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  word-wrap: break-word;
+  overflow: hidden;
+  box-sizing: border-box;
+}
