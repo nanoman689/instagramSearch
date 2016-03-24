@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
   <title>Instagram Search - An AngularJS project</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -13,17 +14,24 @@
 <body>
 
   <div class="topBar" ng-controller="myController">
-    <img src="img/ng-instagram_inv.jpg"><br>
-    <h1> Search for images using Instagram</h1>
-    <form ng-submit="searchInstaGram(keyword)">
-      <input type="text" class="search" value="" ng-model="keyword" placeholder="Enter a tag to search"> <input type="submit" name="btn" class="btn-style" id="submit" value="submit">
+        <h1 class="headerTop">
+            Instagr<span></span>m</br>
+        </h1>
+    <h2>Search for images using Instagram</h2>
+    <h3>Type a keyword into the search box below and see what you can find!</h3>  
+    <form ng-submit="searchInstaGram()">
+        
+             <h3>Built with AngularJS</h3>  
+        
+      <input type="text" class="search" value="" ng-model="keyword" ng-minlength="1" required placeholder="Enter a tag to search"> <input type="submit" name="btn" class="btn-style" id="submit" value="submit"> <input type="button" name="btn" class="btn-style" ng-click="clearSearch()" value="reset">
     </form>
     <div class="results" ng-show="results">
-      <h2>Found {{results.length}} results for {{keyword}}<h2>
+      <h3>Found {{results.length}} results for {{keyword}}<h3>
         <div class="photos" ng-repeat="result in results">
           <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
         </div>
     </div>
+  
   <div>
 
 
