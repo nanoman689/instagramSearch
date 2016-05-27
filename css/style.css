@@ -74,12 +74,10 @@ input {
 
 /* Table Tags */
 
-table {
-    margin-left: auto;
+.table {
     margin-right: auto;
+    margin-left: auto;
     border: 1px;
-    width: 50%;
-    height: 300px;
 }
 
 .photos {
@@ -87,10 +85,6 @@ table {
     width: 200px;
 }
 
-.new-row {
-    clear: left;
-    
-}
 
 img {
     width: 180px;
