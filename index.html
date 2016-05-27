@@ -21,18 +21,31 @@
     <h3>Type a keyword into the search box below and see what you can find!</h3>  
     <form ng-submit="searchInstaGram()">
         
-             <h3>Built with AngularJS</h3>  
+    <h3>Built with AngularJS</h3>  
         
       <input type="text" class="search" value="" ng-model="keyword" ng-minlength="1" required placeholder="Enter a tag to search"> <input type="submit" name="btn" class="btn-style" id="submit" value="submit"> <input type="button" name="btn" class="btn-style" ng-click="clearSearch()" value="reset">
     </form>
+
+    <div class="table" ng-model="columnBreak" ng-show="results">
+      <h3>Found {{results.length}} results for {{keyword}}<h3>
+        <div class="table">
+            <div class="photos" ng-class="{'new-row': startNewRow($index, columnBreak)}" ng-repeat="result in results">
+              <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
+            </div>
+        </div>    
+    </div>
+    
+   <!-- 
     <div class="results" ng-show="results">
       <h3>Found {{results.length}} results for {{keyword}}<h3>
         <div class="photos" ng-repeat="result in results">
           <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
         </div>
     </div>
+    <!-- 
   
   <div>
+
 
 
 

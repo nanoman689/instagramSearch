@@ -33,4 +33,10 @@ angular.module('myApp', ['ngAnimate'])
     
     $scope.searchInstaGram();
     
+    $scope.columnBreak = 2;
+    
+    $scope.startNewRow = function(index, count){
+        return((index)%count)===0;
+    };
+    
 });
