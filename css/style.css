@@ -74,10 +74,11 @@ input {
 
 /* Table Tags */
 
-.table {
+.tablePhotos {
     margin-right: auto;
     margin-left: auto;
     border: 1px;
+    width: 600px;
 }
 
 .photos {
@@ -136,9 +137,22 @@ img {
     }
     
     img {
-      height: 50%;
-      width: 50%;
+        width: 130px;
+        padding: 5px;
     }
+    .tablePhotos {
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px;
+        margin: 0 auto;
+        width: 375px;
+    }
+
+    .photos {
+        float: left;
+        width: 185px;
+    }
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -153,9 +167,22 @@ img {
     }
     
     img {
-      height: 75%;
-      width: 75%;
+        width: 150px;
+        padding: 5px;
     }
+    .tablePhotos {
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px;
+        margin: 0 auto;
+        width: 525px;
+    }
+
+    .photos {
+        float: left;
+        width: 175px;
+    }
+
 }
 
 /* Desktops and laptops ----------- */
@@ -170,9 +197,6 @@ img {
       padding-top: 15px;    
     }
     
-    img {
-      height: 90%;
-      width: 90%;
-    }
+
 }
 

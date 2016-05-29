@@ -28,26 +28,11 @@
 
     <div class="table" ng-model="columnBreak" ng-show="results">
       <h3>Found {{results.length}} results for {{keyword}}<h3>
-        <div class="table">
+        <div class="tablePhotos">
             <div class="photos" ng-class="{'new-row': startNewRow($index, columnBreak)}" ng-repeat="result in results">
               <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
             </div>
         </div>    
     </div>
-    
-   <!-- 
-    <div class="results" ng-show="results">
-      <h3>Found {{results.length}} results for {{keyword}}<h3>
-        <div class="photos" ng-repeat="result in results">
-          <a href="{{result.link}}"> <img ng-src="{{result.images.standard_resolution.url}}"></img> </a>
-        </div>
-    </div>
-    <!-- 
-  
-  <div>
-
-
-
-
 </body>
 </html>
